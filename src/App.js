@@ -1,16 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Intro } from './components/Intro';
+import { info } from './components/data';
 
 export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Himanshu Singh Bankoti
-        </p>
-        This portfolio is under-development
-      </header>
+    <div>
+      <Intro 
+        name={info.name}
+        designation={info.designation}
+        description={info.description}
+      />
     </div>
   );
 }
