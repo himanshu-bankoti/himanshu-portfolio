@@ -1,4 +1,4 @@
-import "../assets/intro.css";
+import "../../assets/intro.css";
 
 export function Intro({ name, designation, description }) {
     return (
