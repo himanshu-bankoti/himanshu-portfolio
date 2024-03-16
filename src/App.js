@@ -4,7 +4,7 @@ import { Intro } from "./components/intro/Intro";
 import { info } from "./components/Data";
 import { Header } from "./components/Header";
 import { icons } from "./components/Icon";
-import { SkillsAnimation } from "./components/intro/SkillsAnimation";
+import { TypeWriterEffect } from "./components/intro/TypeWriterEffect";
 
 export default function App() {
 
@@ -16,7 +16,7 @@ export default function App() {
         designation={info.designation}
         description={info.description}
       />
-      <SkillsAnimation />
+      <TypeWriterEffect iterationArray={info.experties}/>
     </div>
   );
 }
