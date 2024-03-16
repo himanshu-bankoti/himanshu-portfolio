@@ -3,7 +3,7 @@ import "../assets/header.css";
 export function Header({ icons }) {
   //The icons are named as iconOne, iconTwo... because icons are subjective to change.
   return (
-    <div class="small-icons">
+    <div className="small-icons">
       <a href={icons.react.link}>
         <img src={icons.react.icon} />
       </a>
