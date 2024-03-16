@@ -8,3 +8,14 @@
     margin-top: 1%;
 }
 
+@media  screen and (max-width: 768px) {
+    .small-icons {
+        margin-left: 70%;
+        margin-top: 1%;
+    }
+
+    .small-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
