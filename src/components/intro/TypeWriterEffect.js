@@ -4,18 +4,18 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
   const [counter, setCounter] = useState(0);
   const [finalText, setFinalText] = useState("");
   const [text, setText] = useState("");
- // const skipIteration = useRef(true);
+  const skipIteration = useRef(true);
   const typeSpeed = useRef(typingSpeed); //In Milliseconds
 
   async function writeText(text) {
     let currentChar = 1;
     return new Promise((resolve) => {
-      setInterval(() => {
+      const intervalId = setInterval(() => {
         if (currentChar <= text.length) {
           setFinalText(text.substring(0, currentChar));
           currentChar = currentChar + 1;
         } else {
-          clearInterval();
+          clearInterval(intervalId);
           resolve();
         }
       }, typeSpeed.current);
@@ -25,12 +25,12 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
   async function deleteText(text) {
     let currentChar = text.length;
     return new Promise((resolve) => {
-      setInterval(() => {
+      const intervalId = setInterval(() => {
         if (currentChar >= 0) {
           setFinalText(text.substring(0, currentChar));
           currentChar = currentChar - 1;
         } else {
-          clearInterval();
+          clearInterval(intervalId);
           resolve();
         }
       }, typeSpeed.current);
@@ -61,10 +61,10 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
 
   useEffect(() => {
     // Skipping useEffect first execution of react strict.
-    // if (skipIteration.current) {
-    //   skipIteration.current = false;
-    //   return;
-    // }
+    if (skipIteration.current) {
+      skipIteration.current = false;
+      return;
+    }
     runEffect(text);
   }, [counter]);
 
