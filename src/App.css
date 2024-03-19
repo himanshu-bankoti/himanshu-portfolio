@@ -1,4 +1,52 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
 body {
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(30, 55, 69) 100%, rgba(0,212,255,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(30, 55, 69) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+@media screen and (max-width: 768px) {
+  .font-big {
+    font-size: 25px !important;
+  }
+
+  .custom-cursor {
+    font-size: 30px !important;
+  }
+}
+
+.light-color {
+  color: rgba(207, 211, 209, 0.744);
+}
+
+.text-unique {
+  color: rgb(17, 193, 70);
+}
+.label {
+  display: inline-block;
+}
+
+.font-big {
+  font-size: 40px;
+}
+.custom-cursor {
+  color: rgb(17, 151, 172);
+  font-weight: 500;
+  font-size: 48px;
+  margin-left: -8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blink {
+  animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }

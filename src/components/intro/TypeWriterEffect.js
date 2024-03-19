@@ -39,14 +39,18 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
 
   async function runEffect(text) {
     await writeText(text);
+    await delay(500);
     await deleteText(text);
-    await delay(300);
-    if (counter < iterationArray.length) {
-      setCounter(counter + 1);
-      setText(iterationArray[counter].name);
-    } else {
-      setCounter(0);
-    }
+    await delay(200);
+
+    setCounter((currentCounter) => {
+      if (currentCounter < iterationArray.length - 1) {
+        return currentCounter + 1;
+      } else {
+        return 0;
+      }
+    });
+    setText(iterationArray[counter].name);
   }
 
   async function delay(milliSeconds) {
@@ -64,5 +68,11 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
     runEffect(text);
   }, [counter]);
 
-  return <>{<h1 className="text-danger">{finalText}</h1>}</>;
+  return (
+    <>
+      <span>
+        {finalText} <span class="custom-cursor blink">I</span>
+      </span>
+    </>
+  );
 }
