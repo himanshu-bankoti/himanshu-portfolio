@@ -8,5 +8,7 @@ export const info = {
           { name: "React", color: "Red" },
           { name: "HTML", color: "Red" },
           { name: "CSS", color: "Red" },
+          { name: "jQuery", color: "Red" },
+          { name: "REST API", color: "Red" },
     ],
 }
