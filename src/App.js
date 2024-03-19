@@ -16,7 +16,9 @@ export default function App() {
         designation={info.designation}
         description={info.description}
       />
-      <TypeWriterEffect iterationArray={info.experties}/>
+      <TypeWriterEffect
+        iterationArray={info.experties}
+        typingSpeed={110} />
     </div>
   );
 }
