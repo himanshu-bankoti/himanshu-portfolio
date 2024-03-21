@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback} from "react";
 
 export function TypeWriterEffect({ iterationArray, typingSpeed }) {
   const [counter, setCounter] = useState(0);
@@ -6,6 +6,7 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
   const [text, setText] = useState("");
   const skipIteration = useRef(true);
   const typeSpeed = useRef(typingSpeed); //In Milliseconds
+  const runEffectRef = useRef();
 
   async function writeText(text) {
     let currentChar = 1;
@@ -37,7 +38,7 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
     });
   }
 
-  async function runEffect(text) {
+  const runEffect = useCallback(async (text) => {
     await writeText(text);
     await delay(500);
     await deleteText(text);
@@ -49,9 +50,11 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
       } else {
         return 0;
       }
-    });
+    }, []);
     setText(iterationArray[counter].name);
-  }
+  },[iterationArray, counter]);
+
+  runEffectRef.current = runEffect;
 
   async function delay(milliSeconds) {
     return new Promise((resolve) => {
@@ -65,8 +68,8 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
       skipIteration.current = false;
       return;
     }
-    runEffect(text);
-  }, [counter]);
+    runEffectRef.current(text); 
+  }, [counter, text, runEffect]);
 
   return (
     <>
