@@ -1,7 +1,10 @@
 .title-name {
   text-decoration: none;
+  font-size: 60px;
 }
-
+.title-name:hover {
+  text-decoration: underline;
+}
 .common-color {
   color: rgba(230, 235, 237, 0.932);
 }
@@ -15,6 +18,11 @@
 @media screen and (max-width: 768px) {
   .intro-wrapper {
     margin-left: 16%;
-    margin-top: 10%;
+    margin-top: 17%;
+  }
+
+  .title-name {
+    text-decoration: none;
+    font-size: 35px;
   }
 }

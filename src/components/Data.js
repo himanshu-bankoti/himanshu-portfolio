@@ -2,6 +2,7 @@ export const info = {
   name: "Himanshu Bankoti",
   designation: "Backend Engineer",
   description: "I specialize in",
+  linkedIn:"https://www.linkedin.com/in/himanshu-bankoti-2351ab179",
   summary:
     "As a seasoned Laravel-React developer, I bring a wealth of experience in crafting robust web applications with a focus on both frontend and backend development. Here's a snapshot of my expertise:",
   experties: [

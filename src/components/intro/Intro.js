@@ -1,10 +1,10 @@
 import "../../assets/intro.css";
 import { TypeWriterEffect } from "../../components/intro/TypeWriterEffect";
 
-export function Intro({ name, designation, description, experties }) {
+export function Intro({ name, designation, description, experties, linkedIn }) {
   return (
     <div className="common-color">
-      <a className="h1 common-color title-name font-weight-bold" href="/">
+      <a className="h1 common-color title-name font-weight-bold" href={linkedIn} target="_blank">
         {name}
       </a>
       <span className="light-color font-big">
