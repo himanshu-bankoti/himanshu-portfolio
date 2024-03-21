@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/himanshu-portfolio/static/css/main.3870785a.css",
-    "main.js": "/himanshu-portfolio/static/js/main.bd26b3de.js",
+    "main.js": "/himanshu-portfolio/static/js/main.5989086d.js",
     "static/js/453.b05d33bc.chunk.js": "/himanshu-portfolio/static/js/453.b05d33bc.chunk.js",
     "index.html": "/himanshu-portfolio/index.html",
     "main.3870785a.css.map": "/himanshu-portfolio/static/css/main.3870785a.css.map",
-    "main.bd26b3de.js.map": "/himanshu-portfolio/static/js/main.bd26b3de.js.map",
+    "main.5989086d.js.map": "/himanshu-portfolio/static/js/main.5989086d.js.map",
     "453.b05d33bc.chunk.js.map": "/himanshu-portfolio/static/js/453.b05d33bc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3870785a.css",
-    "static/js/main.bd26b3de.js"
+    "static/js/main.5989086d.js"
   ]
 }
