@@ -9,6 +9,8 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
   const runEffectRef = useRef();
 
   async function writeText(text) {
+    console.log('Inside writeText');
+
     let currentChar = 1;
     return new Promise((resolve) => {
       const intervalId = setInterval(() => {
@@ -45,6 +47,7 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
     await delay(200);
 
     setCounter((currentCounter) => {
+      console.log('Inside setCounter');
       if (currentCounter < iterationArray.length - 1) {
         return currentCounter + 1;
       } else {
@@ -68,13 +71,14 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
       skipIteration.current = false;
       return;
     }
+    console.log('Inside useEffect');
     runEffectRef.current(text); 
   }, [counter, text, runEffect]);
 
   return (
     <>
       <span>
-        {finalText} <span class="custom-cursor blink">I</span>
+        {finalText} <span className="custom-cursor blink">I</span>
       </span>
     </>
   );
