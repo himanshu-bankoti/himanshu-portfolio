@@ -3,12 +3,12 @@ import { TypeWriterEffect } from "../../components/intro/TypeWriterEffect";
 
 export function Intro({ name, designation, description, experties }) {
   return (
-    <div className="common-color intro-wrapper">
+    <div className="common-color">
       <a className="h1 common-color title-name font-weight-bold" href="/">
         {name}
       </a>
       <span className="light-color font-big">
-        <h5>({designation})</h5>
+        <h4>{designation}</h4>
         <span className="label">{description} </span>
         <span
           className="font-weight-bold text-unique"
