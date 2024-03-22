@@ -19,6 +19,9 @@ export default function App() {
           />
         </div>
         <BannerImage image={image} />
+        <div className="second-section">
+          <h5 className="text-center " style={{color : 'white', marginTop: '100px'}}>About</h5>
+        </div>
       </div>
     </div>
   );

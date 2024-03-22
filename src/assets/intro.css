@@ -43,7 +43,7 @@
 .image-container {
   margin-left: 45%;
   margin-top: 3%;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .image-container img {
