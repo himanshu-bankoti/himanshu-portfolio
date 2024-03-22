@@ -1,6 +1,6 @@
 export const info = {
-  name: "Himanshu Bankoti",
-  designation: "Backend Engineer",
+  name: "I'm Himanshu Bankoti",
+  designation: "a, backend engineer",
   description: "I specialize in",
   linkedIn:"https://www.linkedin.com/in/himanshu-bankoti-2351ab179",
   summary:

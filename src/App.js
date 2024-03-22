@@ -7,9 +7,10 @@ import { icons } from "./components/Icon";
 export default function App() {
   return (
     <div>
-      <div className="heading-image">
+      <div>
         {/* <Header icons={icons} /> */}
-        <div className="image-wrapper-circle"> </div>
+        {/* <div className="heading-background-secondary"> </div> */}
+        <div class="vertical-line"></div>
         <div className="intro-wrapper">
           <Intro
             name={info.name}
@@ -20,7 +21,6 @@ export default function App() {
           />
         </div>
       </div>
-      <div className="specialities-wrapper"></div>
     </div>
   );
 }
