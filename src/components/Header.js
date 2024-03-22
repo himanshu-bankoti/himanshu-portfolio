@@ -6,7 +6,7 @@ export function Header({linkedIn, github}) {
   //The icons are named as iconOne, iconTwo... because icons are subjective to change.
   return (
     <div className="small-links">
-      <img src={githubIcon}></img><a className="underline-hover" href={github}>Github</a>
+      <img src={githubIcon}></img><a  href={github}>Github</a>
       <img src={linkedInIcon}></img><a href={linkedIn}>Linked In</a>
       {/* <a href={icons.react.link} target="_blank">
         <img src={icons.react.icon} />

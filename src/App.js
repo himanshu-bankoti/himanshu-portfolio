@@ -13,7 +13,7 @@ export default function App() {
         github={info.github}
       />
       <div>
-        <div class="vertical-line"></div>
+        <div className="vertical-line"></div>
         <div className="intro-wrapper">
           <Intro
             name={info.name}
