@@ -25,7 +25,7 @@
   width: 15px;
   height: 150px;
   margin-left: 12%;
-  background-color: orangered;
+  background-color: rgb(45, 18, 107);
   margin-top: 7.7%;
   position: absolute;
 }
@@ -34,7 +34,7 @@
   font-size: 30px;
 }
 .custom-cursor {
-  color: rgb(17, 151, 172);
+  color: rgb(45, 77, 152);
   font-weight: 500;
   font-size: 48px;
   margin-left: -8px;
@@ -50,6 +50,8 @@
     opacity: 0;
   }
 }
+
+
 
 /* .heading-background {
   height: 800px;

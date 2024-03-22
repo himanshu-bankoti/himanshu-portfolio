@@ -1,15 +1,13 @@
 import "./App.css";
 import { Intro } from "./components/intro/Intro";
 import { info } from "./components/Data";
-import { Header } from "./components/Header";
-import { icons } from "./components/Icon";
+import { BannerImage } from "./components/intro/BannerImage";
+import image from "./assets/images/me.png";
 
 export default function App() {
   return (
     <div>
       <div>
-        {/* <Header icons={icons} /> */}
-        {/* <div className="heading-background-secondary"> </div> */}
         <div class="vertical-line"></div>
         <div className="intro-wrapper">
           <Intro
@@ -20,6 +18,7 @@ export default function App() {
             linkedIn={info.linkedIn}
           />
         </div>
+        <BannerImage image={image} />
       </div>
     </div>
   );
