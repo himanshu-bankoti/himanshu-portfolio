@@ -3,6 +3,7 @@ export const info = {
   designation: "a, web developer",
   description: "I specialize in",
   linkedIn:"https://www.linkedin.com/in/himanshu-bankoti-2351ab179",
+  github: "https://github.com/himanshu-bankoti",
   summary:
     "As an experienced Laravel developer, I possess a wealth of expertise in architecting robust web applications with a primary focus on backend development, and in RESTful API design and implementation. Here's a snapshot of my professional experience and skills.",
   experties: [

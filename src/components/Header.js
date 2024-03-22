@@ -1,10 +1,14 @@
 import "../assets/header.css";
+import githubIcon from "../assets/images/github.png"
+import linkedInIcon from "../assets/images/linkedIn.png"
 
-export function Header({ icons }) {
+export function Header({linkedIn, github}) {
   //The icons are named as iconOne, iconTwo... because icons are subjective to change.
   return (
-    <div className="small-icons">
-      <a href={icons.react.link} target="_blank">
+    <div className="small-links">
+      <img src={githubIcon}></img><a className="underline-hover" href={github}>Github</a>
+      <img src={linkedInIcon}></img><a href={linkedIn}>Linked In</a>
+      {/* <a href={icons.react.link} target="_blank">
         <img src={icons.react.icon} />
       </a>
       <a href={icons.html.link} target="_blank">
@@ -15,7 +19,7 @@ export function Header({ icons }) {
       </a>
       <a href={icons.bootstrap.link} target="_blank">
         <img src={icons.bootstrap.icon} />
-      </a>
+      </a> */}
     </div>
   );
 }
