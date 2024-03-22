@@ -16,6 +16,7 @@ export default function App() {
             description={info.description}
             experties={info.experties}
             linkedIn={info.linkedIn}
+            summary={info.summary}
           />
         </div>
         <BannerImage image={image} />

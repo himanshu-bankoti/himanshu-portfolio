@@ -24,7 +24,7 @@
   line-height: 1;
 }
 
-.container-first {
+.container-first .container-second {
   display: block;
 }
 
@@ -48,6 +48,13 @@
 
 .image-container img {
   width: 900px;
+}
+
+.summary-section {
+  margin-top: 10%;
+  width: 550px;
+  font-size: 20px;
+  /* background-color: aqua; */
 }
 
 /*For Mobile screen view */

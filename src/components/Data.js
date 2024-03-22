@@ -4,7 +4,7 @@ export const info = {
   description: "I specialize in",
   linkedIn:"https://www.linkedin.com/in/himanshu-bankoti-2351ab179",
   summary:
-    "As a seasoned Laravel-React developer, I bring a wealth of experience in crafting robust web applications with a focus on both frontend and backend development. Here's a snapshot of my expertise:",
+    "As an experienced Laravel developer, I possess a wealth of expertise in architecting robust web applications with a primary focus on backend development, and in RESTful API design and implementation. Here's a snapshot of my professional experience and skills.",
   experties: [
     { name: "Laravel" },
     { name: "SQL" },
