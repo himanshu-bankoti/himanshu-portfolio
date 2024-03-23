@@ -11,6 +11,7 @@ export default function App() {
       <Header 
         linkedIn={info.linkedIn}
         github={info.github}
+        location={info.location}
       />
       <div>
         <div className="vertical-line"></div>

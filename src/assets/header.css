@@ -18,12 +18,33 @@
 }
 
 .small-links {
-  margin-left: 85%;
-  margin-top: 1%;
+  margin-left: 60%;
   position: relative;
 }
 
+.header-container {
+  display: flex;
+}
 
+.location-icon-header img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.location-icon-header a {
+  text-decoration: none;
+  color: black;
+}
+
+.location-icon-header a:hover{
+  color: rgb(18, 105, 13);
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+}
 /* @media  screen and (max-width: 768px) {
     .small-icons {
         margin-left: 70%;
