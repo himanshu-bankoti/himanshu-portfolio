@@ -4,11 +4,12 @@ import { info } from "./components/Data";
 import { BannerImage } from "./components/intro/BannerImage";
 import image from "./assets/images/me.png";
 import { Header } from "./components/Header";
+import {About} from "./components/about/About";
 
 export default function App() {
   return (
     <div>
-      <Header 
+      <Header
         linkedIn={info.linkedIn}
         github={info.github}
         location={info.location}
@@ -26,9 +27,9 @@ export default function App() {
           />
         </div>
         <BannerImage image={image} />
-        <div className="second-section">
-          <h5 className="text-center" style={{color : 'white', marginTop: '100px'}}>About</h5>
-        </div>
+      </div>
+      <div className="second-section">
+        <About />
       </div>
     </div>
   );
