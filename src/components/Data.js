@@ -15,6 +15,7 @@ export const info = {
     { name: "SQL" },
     { name: "REST API" },
     { name: "Google API" },
+    {name: 'Payment Integration'},
     { name: "React Js" },
     { name: "jQuery" },
     { name: "Angular Js" },
