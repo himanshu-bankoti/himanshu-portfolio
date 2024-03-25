@@ -1,9 +1,16 @@
 import "../../assets/intro.css";
 import { TypeWriterEffect } from "../../components/intro/TypeWriterEffect";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 
-export function Intro({ name, designation, description, experties, linkedIn, summary }) {
+export function Intro({
+  name,
+  designation,
+  description,
+  experties,
+  linkedIn,
+  summary,
+}) {
   return (
     <div className="common-color">
       <a className="common-color title-name" href={linkedIn} target="_blank">
@@ -21,8 +28,14 @@ export function Intro({ name, designation, description, experties, linkedIn, sum
           </div>
         </div>
         <div className="summary-section">
-            <p>{summary}</p>
-            <button className="explore-btn">Explore <FontAwesomeIcon className="center-icon" icon={faChevronCircleRight} /></button>
+          <p>{summary}</p>
+          <button className="explore-btn">
+            Explore{" "}
+            <FontAwesomeIcon
+              className="center-icon"
+              icon={faChevronCircleRight}
+            />
+          </button>
         </div>
       </span>
     </div>

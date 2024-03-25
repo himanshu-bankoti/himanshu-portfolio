@@ -9,7 +9,7 @@ export function Header({ linkedIn, github, location }) {
     <div>
       <div className="header-container">
         <div className="box location-icon-header">
-          <img src={locationIcon} ></img> 
+          <img src={locationIcon}></img>
           <a href={location.map_link}>{location.name}</a>
         </div>
         <div className="small-links box">

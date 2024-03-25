@@ -4,7 +4,7 @@ import { info } from "./components/Data";
 import { BannerImage } from "./components/intro/BannerImage";
 import image from "./assets/images/me.png";
 import { Header } from "./components/Header";
-import {About} from "./components/about/About";
+import { About } from "./components/about/About";
 
 export default function App() {
   return (
