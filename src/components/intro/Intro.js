@@ -20,6 +20,7 @@ export function Intro({ name, designation, description, experties, linkedIn, sum
         </div>
         <div className="summary-section">
             <p>{summary}</p>
+            <button className="explore-btn">Explore</button>
         </div>
       </span>
     </div>
