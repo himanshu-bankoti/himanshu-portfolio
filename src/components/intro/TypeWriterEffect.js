@@ -4,7 +4,6 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
   const [counter, setCounter] = useState(0);
   const [finalText, setFinalText] = useState("");
   const [text, setText] = useState("");
-  // const skipIteration = useRef(true);
   const typeSpeed = useRef(typingSpeed); //In Milliseconds
   const runEffectRef = useRef();
 
@@ -66,12 +65,6 @@ export function TypeWriterEffect({ iterationArray, typingSpeed }) {
   }
 
   useEffect(() => {
-    // Skipping useEffect first execution of react strict. (uncomment below code for local development)
-    /* if (skipIteration.current) {
-       skipIteration.current = false;
-       return;
-    }*/
-
     runEffectRef.current(text);
   }, [counter, text, runEffect]);
 

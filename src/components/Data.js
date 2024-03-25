@@ -11,16 +11,16 @@ export const info = {
   },
   stats: {
     experience: {
-      title: 2,
-      sub_title: "Years of experience",
+      count: 2,
+      title: "Years of experience",
     },
     impact: {
-      title: 2000,
-      sub_title: "Users impacted",
+      count: 2000,
+      title: "Users impacted",
     },
     hours: {
-      title: 5700,
-      sub_title: "Hours dedicated",
+      count: 5700,
+      title: "Hours dedicated",
     },
   },
   summary:
