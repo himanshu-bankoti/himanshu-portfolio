@@ -11,13 +11,6 @@
   color: rgba(0, 0, 0, 0.932);
 }
 
-.intro-wrapper {
-  margin-left: 14%;
-  width: 640px;
-  margin-top: 4%;
-  position: absolute;
-}
-
 .flex-container {
   display: flex;
   width: 500px;
@@ -42,12 +35,11 @@
 
 .image-container {
   margin-left: 45%;
-  margin-top: 1%;
-  /* position: absolute; */
 }
 
 .image-container img {
   width: 900px;
+  margin-top: 1%;
 }
 
 .explore-btn {

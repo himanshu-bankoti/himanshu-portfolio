@@ -9,12 +9,14 @@ import { About } from "./components/about/About";
 export default function App() {
   return (
     <div>
+      <div className="header-wrapper">
       <Header
         linkedIn={info.linkedIn}
         github={info.github}
         location={info.location}
       />
-      <div>
+      </div>
+      <div className="first-section-wrapper">
         <div className="vertical-line"></div>
         <div className="intro-wrapper">
           <Intro
@@ -28,7 +30,7 @@ export default function App() {
         </div>
         <BannerImage image={image} />
       </div>
-      <div className="second-section">
+      <div className="second-section-wrapper">
         <About />
       </div>
     </div>

@@ -13,21 +13,9 @@
   }
 }
 
-.second-section {
-  width: 100%;
-  background-color: rgb(0, 0, 0);
-  height: 500px;
-  margin-top: 1.2%;
-  position: absolute;
+.header-wrapper {
+  background-color: white;
 }
-
-/* .light-color {
-  color: rgba(4, 5, 4, 0.744);
-} */
-
-/* .text-unique {
-  color: rgba(9, 127, 32, 0.744);
-} */
 
 .vertical-line {
   width: 15px;
@@ -40,4 +28,25 @@
 
 .font-big {
   font-size: 30px;
+}
+
+.intro-wrapper {
+  margin-left: 14%;
+  width: 640px;
+  margin-top: 4%;
+  position: absolute;
+}
+
+.first-section-wrapper {
+  background-color: white;
+  border-bottom-left-radius: 20%;
+  padding-bottom: 50px;
+}
+
+.second-section-wrapper {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 500px;
+  margin-top: 10%;
+  position: absolute;
 }
