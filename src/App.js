@@ -11,11 +11,11 @@ export default function App() {
   return (
     <div>
       <div className="header-wrapper">
-      <Header
-        linkedIn={info.linkedIn}
-        github={info.github}
-        location={info.location}
-      />
+        <Header
+          linkedIn={info.linkedIn}
+          github={info.github}
+          location={info.location}
+        />
       </div>
       <div className="first-section-wrapper">
         <div className="vertical-line"></div>
@@ -32,7 +32,7 @@ export default function App() {
         <BannerImage image={image} />
       </div>
       <div>
-        <Stats />
+        <Stats data={info.stats} />
       </div>
       <div className="second-section-wrapper">
         <About />

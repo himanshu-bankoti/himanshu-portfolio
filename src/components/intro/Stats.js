@@ -1,17 +1,24 @@
+import { useState } from "react";
 import "../../assets/stats.css";
-export function Stats() {
+export function Stats({ data }) {
+  const [experience, setExperience] = useState(0);
+  const [impact, setImpact] = useState(0);
+  const [hours, setHours] = useState(0);
+
   return (
     <>
       <div className="flex-wrapper">
         <div className="section-one">
-          <h2>200 + hours</h2>
+          <h1>{experience} +</h1>
+          <p>{data.experience.sub_title}</p>
         </div>
         <div className="section-two">
-          <h2>200 + hours</h2>
+          <h1>{impact} +</h1>
+          <p>{data.impact.sub_title}</p>
         </div>
         <div className="section-three">
-          <h2>200 + hours</h2>
-          <p>here</p>
+          <h1>{hours} +</h1>
+          <p>{data.hours.sub_title}</p>
         </div>
       </div>
     </>
