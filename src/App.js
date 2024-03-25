@@ -5,6 +5,7 @@ import { BannerImage } from "./components/intro/BannerImage";
 import image from "./assets/images/me.png";
 import { Header } from "./components/Header";
 import { About } from "./components/about/About";
+import { Stats } from "./components/intro/Stats";
 
 export default function App() {
   return (
@@ -29,6 +30,9 @@ export default function App() {
           />
         </div>
         <BannerImage image={image} />
+      </div>
+      <div>
+        <Stats />
       </div>
       <div className="second-section-wrapper">
         <About />
