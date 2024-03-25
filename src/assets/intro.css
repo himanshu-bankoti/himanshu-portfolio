@@ -50,8 +50,23 @@
   width: 900px;
 }
 
+.explore-btn {
+  background-color: rgb(80, 13, 160);
+  color: white;
+  width: 104px;
+  height: 40px;
+  padding: 4px 9px 4px;
+  border: none;
+  border-radius: 5%;
+  font-size: 15px;
+}
+
+.explore-btn:hover {
+  background-color:  rgb(102, 43, 175);
+}
+
 .summary-section {
-  margin-top: 10%;
+  margin-top: 5%;
   width: 550px;
   font-size: 20px;
   /* background-color: aqua; */
