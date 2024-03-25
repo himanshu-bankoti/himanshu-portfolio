@@ -59,10 +59,18 @@
   border: none;
   border-radius: 5%;
   font-size: 15px;
+  border-radius: 50px;
 }
 
+.center-icon {
+  margin-left: 5px;
+}
+
+.explore-btn:active {
+  transform: scale(0.97);
+}
 .explore-btn:hover {
-  background-color:  rgb(102, 43, 175);
+  background-color:  rgb(63, 16, 120);
 }
 
 .summary-section {
