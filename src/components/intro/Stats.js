@@ -5,22 +5,51 @@ export function Stats({ data }) {
   const [impact, setImpact] = useState(0);
   const [hours, setHours] = useState(0);
 
-  const updateStats = useCallback(async () => {
+  const updateExpereincedStat = useCallback(async () => {
+    let counter = 0;
     const intervalId = setInterval(() => {
-      let counter = 0;
-      if(counter <= data.experience.count) {
-        console.log('here');
-        // setExperience(counter);
+      if (counter <= data.experience.count) {
+        setExperience(counter);
         counter = counter + 1;
       } else {
         clearInterval(intervalId);
-      }    
-    }, 1000)
-  }, []);
+      }
+    }, 150);
+  }, [data.experience.count]);
+
+  const updateImpactStat = useCallback(async () => {
+    let counter = 0;
+    const intervalId = setInterval(() => {
+      if (counter < data.impact.count) {
+        setImpact(() => {
+          return counter;
+        });
+        counter = counter + 100;
+      } else {
+        clearInterval(intervalId);
+      }
+    }, 100);
+  }, [data.impact.count]);
+
+  const updateHoursStat = useCallback(async () => {
+    let counter = 0;
+    const intervalId = setInterval(() => {
+      if (counter < data.hours.count) {
+        setHours(() => {
+          return counter;
+        });
+        counter = counter + 100;
+      } else {
+        clearInterval(intervalId);
+      }
+    }, 85);
+  }, [data.hours.count]);
 
   useEffect(() => {
-    updateStats();
-  }, [updateStats]);
+    updateExpereincedStat();
+    updateImpactStat();
+    updateHoursStat();
+  }, [updateExpereincedStat, updateImpactStat, updateHoursStat]);
 
   return (
     <>

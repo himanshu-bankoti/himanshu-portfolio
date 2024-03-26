@@ -19,7 +19,7 @@ export const info = {
       title: "Users impacted",
     },
     hours: {
-      count: 5700,
+      count: 5500,
       title: "Hours dedicated",
     },
   },
