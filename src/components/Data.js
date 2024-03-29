@@ -12,7 +12,7 @@ export const info = {
   stats: {
     experience: {
       count: 2,
-      title: "Years of experience",
+      title: "Years of overall experience",
     },
     impact: {
       count: 2000,
