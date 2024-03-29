@@ -1,12 +1,103 @@
 .title-name {
   text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
 }
-
+/* .title-name:hover {
+  text-decoration: underline;
+} */
 .common-color {
-  color: rgba(230, 235, 237, 0.932);
+  color: rgba(0, 0, 0, 0.932);
 }
 
-.intro-wrapper {
-  margin-left: 14%;
-  margin-top: 6%;
+.flex-container {
+  display: flex;
+  width: 500px;
+  line-height: 1;
+}
+
+.container-first .container-second {
+  display: block;
+}
+
+.description {
+  color: rgb(30, 28, 28);
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.type-writer-text {
+  color: rgb(45, 18, 107);
+  font-weight: bold;
+}
+
+.image-container {
+  margin-left: 45%;
+}
+
+.image-container img {
+  width: 900px;
+  margin-top: 1.5%;
+}
+
+.explore-btn {
+  background-color: rgb(80, 13, 160);
+  color: white;
+  width: 104px;
+  height: 40px;
+  padding: 4px 9px 4px;
+  border: none;
+  border-radius: 5%;
+  font-size: 15px;
+  border-radius: 50px;
+}
+
+.center-icon {
+  margin-left: 5px;
+}
+
+.explore-btn:active {
+  transform: scale(0.97);
+}
+.explore-btn:hover {
+  background-color:  rgb(63, 16, 120);
+}
+
+.summary-section {
+  margin-top: 5%;
+  width: 550px;
+  font-size: 20px;
+  /* background-color: aqua; */
+}
+
+.custom-cursor {
+  color: rgb(17, 77, 86);
+  font-weight: 500;
+  font-size: 38px;
+  margin-left: -8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blink {
+  animation: blinker 0.8s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/*For Mobile screen view */
+@media screen and (max-width: 768px) {
+  .intro-wrapper {
+    margin-left: 16%;
+    margin-top: 17%;
+  }
+
+  .title-name {
+    font-size: 35px;
+  }
 }
